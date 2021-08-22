@@ -25,7 +25,8 @@ class Funciones {
  * @return int
  *
  * Hace la suma iterativa del número que se le pasa cpn un ciclo while, hasta que
- * éste llega a 0 (que es cuando se sale del ciclo y regresa la suma).
+ * éste llega a 1. (Cuando es 0, no entra en el ciclo y en vez, regresa el
+ * de la suma).
  *
  */
 int Funciones::sumaIterativa(int n) {
@@ -43,15 +44,12 @@ int Funciones::sumaIterativa(int n) {
  *
  * Hace la suma recursiva del número que se le pasa, llamándose a sí misma hasta
  * que "n" llega a 1.
- * (Primero verifica que el número no sea 0, ya que en ese caso, se retorna 0 de
- * entrada).
+ * (En caso de que "n" sea 0, se retorna 0 de entrada).
  *
  */
 int Funciones::sumaRecursiva(int n) {
-    if (n == 0)
-        return 0;
-    if (n == 1)
-        return 1;
+    if (n == 1 || n == 0)
+        return n;
     else
         return (n + sumaIterativa(n-1));
 }
