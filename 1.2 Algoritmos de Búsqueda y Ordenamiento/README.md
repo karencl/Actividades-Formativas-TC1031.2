@@ -18,6 +18,10 @@
 
 - Su complejidad es de O(log(n)), debido a que en cada vuelta, se va a "dividir" el arreglo a la mitad, con el fin de analizar si el elemento deseado se encuentra en la parte izquierda o derecha de este.
 
+
+- Hay que considerar que para este método se utilizó otro método de ordenamiento (el de selección), el cual tiene una complejidad de O(n^2) y por ende, a pesar de que el método de búsqueda binaria tiene una complejidad de O(log(n)), al ser odenado por éste, el método en general tendría una complejidad de O(n^2 log(n)).
+- *El vector ordenado era una precondición del ejercicio*.
+
 #### Búsqueda secuencial:
 
 - Su complejidad es simplemente de O(n), debido a que se hacen **n** vueltas en el ciclo, con el fin de comparar el elemento buscado, con cada elemento que hay en el vector, hasta que sea o no sea encontrado.
