@@ -116,26 +116,19 @@ void Sorts<T>::mergeArray(vector<T> &vec, int low, int middle, int high) {
     
     // para ambos casos
     while (i < elms_der && j < elms_izq) {
-        if (vec_der[i] >= vec_izq[j]) {
-            vec[k] = vec_izq[j];
-            j++;
-        } else {
-            vec[k] = vec_der[i];
-            i++;
-        }
+        if (vec_der[i] >= vec_izq[j])
+            vec[k] = vec_izq[j++];
+        else
+            vec[k] = vec_der[i++];
         k++;
     }
     
     // para cuando solo uno siga teniendo elementos
     while (i < elms_der) {
-        vec[k] = vec_der[i];
-        i++;
-        k++;
+        vec[k++] = vec_der[i++];
     }
     while (j < elms_izq) {
-        vec[k] = vec_izq[j];
-        j++;
-        k++;
+        vec[k++] = vec_izq[j++];
     }
     
     // vaciamos vectores (izq y der)
