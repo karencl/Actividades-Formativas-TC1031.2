@@ -1,9 +1,9 @@
-//
-//  sorts.h
-//  PrograDataStructureAndAlgorithms
-//
-//  Created by Karen CL on 31/08/21.
-//
+/*
+ *  sorts.h
+ *  PrograDataStructureAndAlgorithms
+ *
+ *  Created by Karen CL on 4/09/21.
+*/
 
 #ifndef sorts_h
 #define sorts_h
