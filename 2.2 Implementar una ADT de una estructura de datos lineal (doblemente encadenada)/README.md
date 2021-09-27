@@ -1,0 +1,13 @@
+# Análisis de complejidad (en el peor de los casos)
+
+#### Insertar un elemento en una lista doblemente enlazada:
+...
+
+#### Encuentra el elemento en una lista doblemente enlazada y devuelve su posición:
+...
+
+#### Actualizar un elemento dentro de una lista doblemente enlazada:
+...
+
+#### Eliminar un elemento dentro de una lista doblemente enlazada de datos segun su posición:
+...
