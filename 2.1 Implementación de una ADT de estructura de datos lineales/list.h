@@ -25,7 +25,6 @@ class Link {
         // Constructores (privados)
         Link(T val): value(val), next(0){};
         Link(T val, Link<T> *nxt): value(val), next(nxt){};
-        Link(const Link<T> &source): value(source.value), next(source.next){};
         
         // Clase "List" puesta como friend de "Link"
         friend class List<T>;
@@ -41,9 +40,9 @@ class List {
         Link<T> *head;
         int     size;
     public:
+        // Constructor
         List(): head(0), size(0){};
-        List(const List<T> &source): head(source.head),
-    size(source.size){};
+        // Destructor
         ~List(){delete head;};
     
         // Métodos
