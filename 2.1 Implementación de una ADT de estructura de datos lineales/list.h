@@ -182,6 +182,8 @@ T List<T>::deleteAt(int pos) {
         }
     }
     
+    size--;
+    
     return val_eliminado;
 }
 
