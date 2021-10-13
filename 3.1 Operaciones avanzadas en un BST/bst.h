@@ -483,10 +483,8 @@ string BST<T>::ancestors(T val) {
  * @param T
  * @return string
  *
- * Si la el árbol no está vacío y el elemento del que se quiere conocer el nivel
- * en el que se encuentra sí existe en éste (se comprueba usando el método
- * "find()"), se manda a llamar al método "whatlevelamI()" de la clase TreeNode,
- * con una variable que va guardando el nivel actual, con el
+ * Si la el árbol no está vacío, se manda a llamar al método "whatlevelamI()" de
+ * la clase TreeNode, con una variable que va guardando el nivel actual, con el
  * fin de irla aumentando, cada vez que saltemos de un nivel a otro.
  *
  * Si el valor NO se encuentra en el árbol, se regresa -1 y en caso contrario, la
@@ -496,10 +494,8 @@ string BST<T>::ancestors(T val) {
 template <class T>
 int BST<T>::whatlevelamI(T val) {
     int level = 1;
-    if (root) {
-        if (root->find(val))
-            return level = root->whatlevelamI(val, level);
-    }
+    if (root)
+        return level = root->whatlevelamI(val, level);
     return -1;
 }
 
