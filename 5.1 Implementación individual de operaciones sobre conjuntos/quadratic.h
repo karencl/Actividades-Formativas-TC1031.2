@@ -59,7 +59,7 @@ Quadratic<Key, Value>::Quadratic(unsigned int sze, Key init,
     for (i = 0; i < size; i++)
         keys[i] = init;
     
-    for (i = 0; i < sze; i++)
+    for (i = 0; i < size; i++)
         values[i] = 0;
 }
 
